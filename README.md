@@ -11,7 +11,7 @@ course {
     class_symbol
     C_ID
     course_description
-    prereqs
+    prereqs             # Holds a list of prequesite course symbols as strings
     sections            # Holds a list of courseSection objects
 }
 ```

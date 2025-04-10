@@ -10,7 +10,7 @@ classifiers = [
 ]
  
 setup(
-  name='California Virtual Campus API',
+  name='CaliforniaVirtualCampusAPI',
   version='0.0.1',
   description='A simple API for the California Virtual Campus platform.',
   long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.md').read(),
@@ -20,7 +20,8 @@ setup(
   license='APACHE', 
   classifiers=classifiers,
   keywords='california virtual campus', 
-  packages=find_packages(),
+  package_dir={'': 'src'},
+  packages=find_packages(where='src'),
   install_requires=requirements, 
   project_urls={
         'Issue Tracker': 'https://github.com/rob-m1/california-virtual-campus-api/issues',

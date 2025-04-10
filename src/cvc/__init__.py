@@ -7,7 +7,9 @@ A simple API for the California Virtual Campus platform.
 :license: Apache 2.0, see LICENSE for more details.
 """
 
-from CVC_API import _getCourseContentByID
+from .helperFunctions import _getCourseContentByID
+
+__all__ = ["getCourseContentByID"]
 
 def getCourseContentByID(id:int):
     return _getCourseContentByID(id)

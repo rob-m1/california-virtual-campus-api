@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: CaliforniaVirtualCampusAPI
+Version: 0.0.1
+Summary: A simple API for the California Virtual Campus platform.
+Home-page: https://github.com/rob-m1/california-virtual-campus-api
+Author: Robert Meli
+Author-email: robertmeli1@outlook.com
+License: APACHE
+Project-URL: Issue Tracker, https://github.com/rob-m1/california-virtual-campus-api/issues
+Keywords: california virtual campus
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+
+# California Virtual Campus API
+A simple API for the California Virtual Campus platform.
+---
+
+There are two classes within this API:
+
+``` 
+course {
+    college_name
+    class_name
+    class_symbol
+    C_ID
+Â  Â  course_description
+Â  Â  prereqs
+Â  Â  sections Â  Â  Â  Â  Â  Â # Holds a list of courseSection objects
+}
+```
+
+---
+
+``` 
+courseSection {
+    semester
+Â  Â  duration
+Â  Â  section
+Â  Â  format
+Â  Â  zeroTextbookCost
+Â  Â  time
+Â  Â  prof
+Â  Â  currSeatCount
+Â  Â  tuition
+Â  Â  sectionNote
+}
+```
+---
+Methods:
+
+```
+getCourseContentByID(id:int)
+```
+
+Returns a course object with the corresponding ID on https://search.cvc.edu/courses/{id}
+
+## License
+This project is also licensed under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0). See LICENSE for more details.
+
+Change Log
+==========
+
+0.0.1 (April 9th, 2025)
+-----------------------
+- First Release
