@@ -54,11 +54,14 @@ def _parseCourse(soup):
         course_description = course_description[:index]
         index = prereqs.index('all with')
         prereqs = prereqs[:index].replace(",", "").replace(".", "").replace("and","").replace("or","").replace("-", " ")
+        prereqs = prereqs.split("  ")
+        for i in range(0,len(prereqs)):
+            prereqs[i] = prereqs[i].strip()
         #print(course_description)
-        print(prereqs)
+        #print(prereqs)
     except (TypeError, AttributeError, ValueError) as e:
         course_description = ""
-        prereqs = ""
+        prereqs = []
     return course(college_name_text,class_name_text,class_symbol,C_ID,course_description,prereqs,_parseSections(soup))
 
 def _parseSections(soup):

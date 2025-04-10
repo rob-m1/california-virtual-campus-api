@@ -16,4 +16,6 @@ class course:
         self.prereqs = prereqs
         self.sections = sections
     def printAll(self):
-        print(self.college_name,self.class_name,self.class_symbol,self.C_ID,self.course_description,self.prereqs,self.sections)
+        print(self.college_name,self.class_name,self.class_symbol,self.C_ID,self.course_description,self.prereqs)
+        for section in self.sections:
+            section.printAll()
