@@ -1,4 +1,4 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.4
 Name: CaliforniaVirtualCampusAPI
 Version: 0.0.1
 Summary: A simple API for the California Virtual Campus platform.
@@ -15,6 +15,17 @@ Classifier: Programming Language :: Python :: 3
 License-File: LICENSE
 Requires-Dist: requests
 Requires-Dist: beautifulsoup4
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: summary
 
 # California Virtual Campus API
 A simple API for the California Virtual Campus platform.
@@ -29,7 +40,7 @@ course {
     class_symbol
     C_ID
 Â  Â  course_description
-Â  Â  prereqs
+Â  Â  prereqs             # Holds a list of prequesite course symbols as strings
 Â  Â  sections Â  Â  Â  Â  Â  Â # Holds a list of courseSection objects
 }
 ```
@@ -68,3 +79,5 @@ Change Log
 0.0.1 (April 9th, 2025)
 -----------------------
 - First Release
+- Added the course and courseSection classes
+- Added the getCourseContentByID method

@@ -1,3 +1,4 @@
 /CaliforniaVirtualCampusAPI.egg-info
 /dist
 .pypirc
+*.toml
