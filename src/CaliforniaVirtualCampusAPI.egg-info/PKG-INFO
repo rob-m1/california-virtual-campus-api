@@ -1,31 +1,25 @@
 Metadata-Version: 2.4
 Name: CaliforniaVirtualCampusAPI
-Version: 0.0.1
+Version: 0.0.6
 Summary: A simple API for the California Virtual Campus platform.
 Home-page: https://github.com/rob-m1/california-virtual-campus-api
 Author: Robert Meli
-Author-email: robertmeli1@outlook.com
-License: APACHE
-Project-URL: Issue Tracker, https://github.com/rob-m1/california-virtual-campus-api/issues
-Keywords: california virtual campus
+Author-email: Robert Meli <robertmeli1@outlook.com>
+Project-URL: Homepage, https://github.com/rob-m1/california-virtual-campus-api
+Project-URL: Issues, https://github.com/rob-m1/california-virtual-campus-api/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
 Classifier: Development Status :: 3 - Alpha
 Classifier: Intended Audience :: Developers
 Classifier: License :: OSI Approved :: Apache Software License
-Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
 License-File: LICENSE
 Requires-Dist: requests
 Requires-Dist: beautifulsoup4
 Dynamic: author
-Dynamic: author-email
-Dynamic: classifier
-Dynamic: description
 Dynamic: home-page
-Dynamic: keywords
-Dynamic: license
 Dynamic: license-file
-Dynamic: project-url
-Dynamic: requires-dist
-Dynamic: summary
 
 # California Virtual Campus API
 A simple API for the California Virtual Campus platform.
@@ -39,9 +33,9 @@ course {
     class_name
     class_symbol
     C_ID
-Â  Â  course_description
-Â  Â  prereqs             # Holds a list of prequesite course symbols as strings
-Â  Â  sections Â  Â  Â  Â  Â  Â # Holds a list of courseSection objects
+    course_description
+    prereqs             # Holds a list of prequesite course symbols as strings
+    sections            # Holds a list of courseSection objects
 }
 ```
 
@@ -50,15 +44,15 @@ course {
 ``` 
 courseSection {
     semester
-Â  Â  duration
-Â  Â  section
-Â  Â  format
-Â  Â  zeroTextbookCost
-Â  Â  time
-Â  Â  prof
-Â  Â  currSeatCount
-Â  Â  tuition
-Â  Â  sectionNote
+    duration
+    section
+    format
+    zeroTextbookCost
+    time
+    prof
+    currSeatCount
+    tuition
+    sectionNote
 }
 ```
 ---
@@ -72,12 +66,3 @@ Returns a course object with the corresponding ID on https://search.cvc.edu/cour
 
 ## License
 This project is also licensed under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0). See LICENSE for more details.
-
-Change Log
-==========
-
-0.0.1 (April 9th, 2025)
------------------------
-- First Release
-- Added the course and courseSection classes
-- Added the getCourseContentByID method
