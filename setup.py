@@ -22,8 +22,10 @@ setup(
   package_dir={'': 'src'},
   packages=find_packages(where='src'),
   install_requires=[
-    "requests",
+    "Requests",
     "beautifulsoup4",
+    "selenium",
+    "setuptools"
 ], 
   project_urls={
         'Issue Tracker': 'https://github.com/rob-m1/california-virtual-campus-api/issues',

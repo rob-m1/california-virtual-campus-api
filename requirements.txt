@@ -1,2 +1,5 @@
-requests
-beautifulsoup4
+beautifulsoup4==4.13.4
+Requests==2.32.3
+selenium==4.31.0
+setuptools==70.0.0
+textdistance==4.6.3
