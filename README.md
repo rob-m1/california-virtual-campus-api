@@ -32,7 +32,7 @@ Example:
 ```python
 from cvc import *
 
-courseIDs = getCourseIDsBySearch("Santa Monica College", "COMP132", "CS20A", "Data Structures with C++")[0]
+courseIDs = getCourseIDsBySearch("Santa Monica College", "COMP132", "CS20B", "Data Structures with C++")[0]
 getCourseContentByID(courseIDs[0])
 ```
 
