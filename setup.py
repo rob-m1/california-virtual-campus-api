@@ -11,7 +11,7 @@ classifiers = [
  
 setup(
   name='CaliforniaVirtualCampusAPI',
-  version='0.0.13',
+  version='0.0.2',
   description='A simple API for the California Virtual Campus platform.',
   long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.md').read(),
   url='https://github.com/rob-m1/california-virtual-campus-api',  

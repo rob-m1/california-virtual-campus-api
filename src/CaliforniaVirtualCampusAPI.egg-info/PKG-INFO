@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: CaliforniaVirtualCampusAPI
-Version: 0.0.13
+Version: 0.0.2
 Summary: A simple API for the California Virtual Campus platform.
 Home-page: https://github.com/rob-m1/california-virtual-campus-api
 Author: Robert Meli
@@ -58,8 +58,8 @@ Example:
 ```python
 from cvc import *
 
-courseIDs = getCourseIDsBySearch("Santa Monica College", "COMP132", "CS20B", "Data Structures with Java")[0]
-getCourseContentByID(courseIDs[0])
+courseIDs = getCourseIDsBySearch("Pasadena City College", "COMP122", "CS2", "FUNDAMENTALS OF COMPUTER SCIENCE I")
+getCourseContentByID(courseIDs[0]).printAll()
 ```
 
 ## License
