@@ -32,8 +32,8 @@ Example:
 ```python
 from cvc import *
 
-courseIDs = getCourseIDsBySearch("Santa Monica College", "COMP132", "CS20B", "Data Structures with Java")[0]
-getCourseContentByID(courseIDs[0])
+courseIDs = getCourseIDsBySearch("Pasadena City College", "COMP122", "CS2", "FUNDAMENTALS OF COMPUTER SCIENCE I")
+getCourseContentByID(courseIDs[0]).printAll()
 ```
 
 ## License

@@ -1,2 +1,5 @@
-requests
+Requests
 beautifulsoup4
+selenium
+setuptools
+textdistance
