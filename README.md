@@ -1,6 +1,7 @@
 # California Virtual Campus API
 A simple API for the California Virtual Campus platform.
 ---
+[![PyPI Downloads](https://static.pepy.tech/badge/californiavirtualcampusapi)](https://pepy.tech/projects/californiavirtualcampusapi)
 
 Documentation can be found at:
 https://cvc-api.github.io/

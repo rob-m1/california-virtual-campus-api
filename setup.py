@@ -18,7 +18,7 @@ setup(
   author='Robert Meli',
   author_email='robertmeli1@outlook.com',
   classifiers=classifiers,
-  keywords=['california virtual campus','web scraping', 'beautifulsoup', 'api', 'education', 'course scraping', 'student resources', 'college resources'], 
+  keywords=['california virtual campus','web scraping', 'beautifulsoup', 'api', 'education', 'course scraping', 'student resources', 'college resources', 'california', 'virtual', 'campus', 'scraping','transfer','classes','school'], 
   package_dir={'': 'src'},
   packages=find_packages(where='src'),
   install_requires=[
@@ -30,5 +30,6 @@ setup(
 ], 
   project_urls={
         'Issue Tracker': 'https://github.com/rob-m1/california-virtual-campus-api/issues',
+        'Documentation': 'https://cvc-api.github.io/'
     }
 )
