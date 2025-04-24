@@ -23,6 +23,7 @@ class courseSection:
         self.sectionNote = sectionNote
         self.semester = semester
         self.registration = registration
+
     def printAll(self):
         print("Semester:",self.semester)
         print("Duration:",self.duration)
@@ -38,3 +39,7 @@ class courseSection:
         print("Tuition:",self.tuition)
         print("Registration:",self.registration)
         print("Section Note:",self.sectionNote)
+    
+    def toJson(self):
+        "Converts the courseSection content into JSON format"
+        pass

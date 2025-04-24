@@ -23,6 +23,7 @@ class course:
         self.unitType = unitType
         self.prereqs = prereqs
         self.sections = sections
+    
     def printAll(self, sections = True):
         print("CVC ID:",self.cvc_id)
         print("College Name:",self.college_name)
@@ -44,3 +45,7 @@ class course:
         if sections:
             for section in self.sections:
                 section.printAll()
+    
+    def toJson(self, sections = True):
+        "Converts the course content into JSON format"
+        pass
