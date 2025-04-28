@@ -1,3 +1,4 @@
+import json
 class courseSection:
     def __init__(self):
         self.duration = ""
@@ -42,4 +43,16 @@ class courseSection:
     
     def toJson(self):
         "Converts the courseSection content into JSON format"
-        pass
+        return json.dumps({
+            "semester": self.semester,
+            "duration": self.duration,
+            "section": self.section,
+            "format": self.format,
+            "zeroTextbookCost": self.zeroTextbookCost,
+            "time": self.time,
+            "prof": self.prof,
+            "currSeatCount": self.currSeatCount,
+            "tuition": self.tuition,
+            "registration": self.registration,
+            "sectionNote": self.sectionNote
+        }, indent=4)
